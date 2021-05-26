@@ -1,0 +1,24 @@
+Recovery time objective (RTO) and recovery point objective (RPO) 
+
+
+
+
+1. Minimum RTO for a single AZ outage     
+Minimum RTO for a single region outage:
+00:00 - Problem happens (0 minutes)
+00:05 - An amount of time passes before an alert triggers (5 minutes)
+00:06 - Alert triggers on-all staff (1 minute)
+00:16 - On-call staff may need to get out of bed, get to computer, log in, log onto VPN (10 minutes)
+00:26 - On-call staff starts diagnosing issue (10 minutes)
+00:31 - Root cause is discovered; remediation started (5 minutes)
+00:51 - Promote read replica in secondary region  (20 minutes)
+
+
+2. Minimum RTO for a single region outage
+ An RTO can take a minimum of 45-60 minutes.
+
+3. Minimum RPO for a single AZ outage
+  A  minimum RPO for a single AZ should be  5 minutes.
+
+4. Minimum RPO for a single region outage
+    A minimum RPO for single region outage is ahould take 20 minutes.
